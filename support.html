@@ -7,6 +7,7 @@
   <style>
     :root {
       --navy: #0d1118;
+      --card: #161d28;
       --mint: #7dffc3;
       --text: #e8eef5;
       --muted: #9aa7b8;
@@ -20,26 +21,93 @@
       line-height: 1.55;
     }
     main {
-      max-width: 40rem;
+      max-width: 38rem;
       margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
+      padding: 2.5rem 1.25rem 4rem;
     }
-    h1 { font-size: 1.75rem; margin: 0 0 1rem; }
     a { color: var(--mint); }
-    p { margin: 0 0 1rem; }
+    .back {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    h1 {
+      font-size: 2.1rem;
+      line-height: 1.15;
+      margin: 1.25rem 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lead { font-size: 1.05rem; margin: 0 0 1.75rem; }
+    .card {
+      background: var(--card);
+      border-radius: 1.25rem;
+      padding: 1.15rem 1.2rem 0.35rem;
+      margin: 0 0 0.85rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem;
+    }
+    p { margin: 0 0 0.9rem; }
     .muted { color: var(--muted); }
+    .mail {
+      display: inline-block;
+      margin: 0.35rem 0 1.5rem;
+      background: var(--mint);
+      color: #062018;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+    }
+    .fine { font-size: 0.92rem; }
   </style>
 </head>
 <body>
   <main>
-    <p class="muted"><a href="index.html">JumpSmart</a></p>
-    <h1>Support</h1>
-    <p>
-      For gameplay issues, account/name deletion, or Restore Purchases problems, email
-      <a href="mailto:abhishekrocketeer@gmail.com">abhishekrocketeer@gmail.com</a>
-      and include your in-game name and device type.
+    <a class="back" href="index.html">← JumpSmart</a>
+    <h1>hey, talk to us</h1>
+    <p class="lead">
+      We’re TerribleToe, and JumpSmart is our tiny 1v1.
+      Playing, sharing, and writing to us is what keeps it going.
+      Please stick around.
     </p>
-    <p><a href="privacy.html">Privacy Policy</a></p>
+
+    <section class="card">
+      <h2>something broke, or you’ve got an idea?</h2>
+      <p>
+        Tell us. A bug, a thing that should feel better, a level you want,
+        a race change, a random thought. We actually read these, and that’s
+        how we pick what to build next.
+      </p>
+      <p class="muted">
+        If it’s a bug, drop your in-game name and iPhone model so we can find it.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>want to help keep the lights on?</h2>
+      <p>
+        The game is free. Ads after matches, and <strong>Remove Ads</strong> in Settings,
+        pay for the servers and the next updates.
+        Want to help more than that? Email us and just say so.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>any suggestion. seriously, any.</h2>
+      <p>
+        A question, a “what if”, a match you loved. Reach out.
+        We want the unfiltered version.
+      </p>
+    </section>
+
+    <a class="mail" href="mailto:abhishekrocketeer@gmail.com?subject=JumpSmart">email us</a>
+
+    <p class="fine muted">
+      Name deletion or Restore Purchases: same inbox. Include your in-game name and device.
+    </p>
+    <p class="fine"><a href="privacy.html">Privacy Policy</a></p>
   </main>
 </body>
 </html>
